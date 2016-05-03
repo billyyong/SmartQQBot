@@ -436,7 +436,7 @@ class QQBot(object):
                 'r': json.dumps(
                     {
                         "vfwebqq": self.vfwebqq,
-                        "hash": self._hash_digest(self._self_info['uin'], self.ptwebqq),
+                        "hash": self._hash_digest(self.get_self_info2['uin'], self.ptwebqq),
                     }
                 )
             },
